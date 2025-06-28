@@ -36,7 +36,8 @@ crmgym-db/
 
 └── README.md
 
-📌 Requisitos
+## 📌 Requisitos
+
 MySQL 8.0+ o MariaDB 10.4+
 Cliente SQL o entorno como MySQL Workbench
 
