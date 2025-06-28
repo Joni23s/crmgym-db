@@ -51,7 +51,8 @@ Cliente SQL o entorno como MySQL Workbench
 4. Ejecutá todo el script (Ctrl + Shift + Enter o el rayo doble ⚡).
 5. ¡Listo! La base de datos estará creada con su estructura y datos de prueba.
 
-📬 Contacto
+### 📬 Contacto
+
 Hecho por Jonathan Araujo en colaboración con Juan Martín Batiatto
 
 Estudiante en Desarrollo de Software – ITU | UNCuyo
