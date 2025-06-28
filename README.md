@@ -21,12 +21,19 @@ Este proyecto contiene el diseño y estructura de la base de datos del CRM para 
 ## 📁 Estructura del repositorio
 
 crmgym-db/
+
 ├── schema/
+
 │ └── crm_gym_egi.sql
+
 ├── diagramas/
+
 │ └── modelo-logico.png # Opcional
+
 ├── notas/
+
 │ └── decisiones-tecnicas.md # Opcional
+
 └── README.md
 
 📌 Requisitos
