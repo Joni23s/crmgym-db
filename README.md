@@ -36,9 +36,10 @@ crmgym-db/
 
 └── README.md
 
-## 📌 Requisitos
+### 📌 Requisitos
 
 MySQL 8.0+ o MariaDB 10.4+
+
 Cliente SQL o entorno como MySQL Workbench
 
 ### ▶️ Cómo usar (con MySQL Workbench)
@@ -52,7 +53,7 @@ Cliente SQL o entorno como MySQL Workbench
 4. Ejecutá todo el script (Ctrl + Shift + Enter o el rayo doble ⚡).
 5. ¡Listo! La base de datos estará creada con su estructura y datos de prueba.
 
-### 📬 Contacto
+## 📬 Contacto
 
 Hecho por Jonathan Araujo en colaboración con Juan Martín Batiatto
 
