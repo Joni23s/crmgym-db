@@ -1,7 +1,7 @@
 
 # 📌 Decisiones Técnicas – CRMGYM Base de Datos
 
-Este documento resume las decisiones clave tomadas durante el diseño y modelado de la base de datos del CRM para gimnasios **CRMGYM**. Se justifica cada elección en función de buenas prácticas, normalización, rendimiento y mantenibilidad.
+Este documento resume las decisiones clave tomadas durante el diseño y modelado de la base de datos del CRM para gimnasios **CRMGYM**. Se justifican algunas elecciones en función de buenas prácticas, normalización, rendimiento y mantenibilidad.
 
 ---
 
@@ -15,7 +15,7 @@ Este documento resume las decisiones clave tomadas durante el diseño y modelado
 
 ## 2. Uso de ENUMs
 
-- Se usaron columnas `ENUM` para valores con dominios cerrados:
+- Se usaron columnas `ENUM` para valores de nulo o poco cambios:
   - `metodo_pago`: efectivo, tarjeta_credito, tarjeta_debito, transferencia
   - `estado` (en pagos): completado, pendiente, rechazado
   - `dia` (en turnos): Lunes a Domingo
@@ -26,9 +26,9 @@ Este documento resume las decisiones clave tomadas durante el diseño y modelado
 ## 3. Campos calculados (`GENERATED ALWAYS`)
 
 - Se implementó `monto_final` en la tabla `pago` como campo **calculado automáticamente**:
-  ```sql
+  
   monto_final = monto_base - descuento_aplicado
-  ```
+  
 - Evita inconsistencias y mantiene la lógica de negocio en la capa de datos.
 
 ---
@@ -37,7 +37,7 @@ Este documento resume las decisiones clave tomadas durante el diseño y modelado
 
 - Las relaciones **muchos a muchos** (por ejemplo, clientes que asisten a varios turnos) se resolvieron con **tablas intermedias**:
   - `turnos_clientes`
-  - `historial_planes` (relación temporal entre cliente y plan)
+  - `historial_planes` (relación historica entre cliente y plan)
 
 ---
 
@@ -64,5 +64,5 @@ Este documento resume las decisiones clave tomadas durante el diseño y modelado
 
 ## ✍️ Autoría
 
-Diseño y desarrollo por **Jonathan Araujo**, en colaboración con Juan Martín Batiatto
+Diseño y desarrollo por **Jonathan Araujo**, en colaboración con **Juan Martín Batiatto**
 Estudiantes de la Tecnicatura Universitaria en Desarrollo de Software (ITU – UNCuyo).
