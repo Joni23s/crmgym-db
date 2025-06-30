@@ -28,11 +28,11 @@ crmgym-db/
 
 ├── diagramas/
 
-│ └── modelo-logico.png # Opcional
+│ └── modelo-logico.png
 
 ├── notas/
 
-│ └── decisiones-tecnicas.md # Opcional
+│ └── decisiones-tecnicas.md
 
 └── README.md
 
