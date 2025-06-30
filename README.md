@@ -55,7 +55,9 @@ Cliente SQL o entorno como MySQL Workbench
 
 ## 📬 Contacto
 
-Hecho por Jonathan Araujo en colaboración con Juan Martín Batiatto
+Hecho por Jonathan Araujo  https://www.linkedin.com/in/jonathan-araujo-750634181/
+
+en colaboración con Juan Martín Batiatto
 
 Estudiante en Desarrollo de Software – ITU | UNCuyo
 
